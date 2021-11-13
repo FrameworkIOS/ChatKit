@@ -13,7 +13,7 @@ public protocol Identifiable {
 
 
 public enum CellRegister {
-    case `class `(AnyClass?)
+    case `class`(AnyClass?)
     case nib(UINib?)
 }
 
@@ -24,4 +24,21 @@ public protocol CellReuseIdentifiable {
 
 public protocol SizeCalculator {
     var size: CGSize { get }
+}
+
+public protocol ItemLayout: Identifiable, CellReuseIdentifiable, SizeCalculator {
+    associatedtype Item: Identifiable
+    var item: Item { get }
+    init(item: Item)
+}
+
+public struct AnyItemLayout: Identifiable, CellReuseIdentifiable, SizeCalculator {
+    
+    
+}
+
+public extension ItemLayout {
+    func toAny() -> AnyItemLayout {
+        return AnyItemLayout(layout: self)
+    }
 }
