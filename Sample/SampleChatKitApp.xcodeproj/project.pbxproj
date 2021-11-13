@@ -21,6 +21,7 @@
 		18761237273F48A700DC56D7 /* ChatKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18761233273F489E00DC56D7 /* ChatKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18761239273F48E200DC56D7 /* SimpleChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18761238273F48E200DC56D7 /* SimpleChatViewController.swift */; };
 		1876123B273F496A00DC56D7 /* SimpleInputPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876123A273F496A00DC56D7 /* SimpleInputPanel.swift */; };
+		1876123D273F49A700DC56D7 /* TextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876123C273F49A700DC56D7 /* TextMessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		1876122D273F489E00DC56D7 /* ChatKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ChatKit.xcodeproj; path = ../../ChatKit.xcodeproj; sourceTree = "<group>"; };
 		18761238273F48E200DC56D7 /* SimpleChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleChatViewController.swift; sourceTree = "<group>"; };
 		1876123A273F496A00DC56D7 /* SimpleInputPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleInputPanel.swift; sourceTree = "<group>"; };
+		1876123C273F49A700DC56D7 /* TextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				1876122A273F482200DC56D7 /* MainTableViewController.swift */,
 				18761238273F48E200DC56D7 /* SimpleChatViewController.swift */,
 				1876123A273F496A00DC56D7 /* SimpleInputPanel.swift */,
+				1876123C273F49A700DC56D7 /* TextMessageCell.swift */,
 			);
 			path = SampleChatKitApp;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1876123D273F49A700DC56D7 /* TextMessageCell.swift in Sources */,
 				1876122B273F482200DC56D7 /* MainTableViewController.swift in Sources */,
 				18761239273F48E200DC56D7 /* SimpleChatViewController.swift in Sources */,
 				187611F2273F474800DC56D7 /* ViewController.swift in Sources */,
