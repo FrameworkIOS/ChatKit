@@ -2,7 +2,7 @@
 //  ItemsViewLayout.swift
 //  ChatKit
 //
-//  Created by Apple on 13/11/21.
+//  Created by Krisna Pranav on 13/11/21.
 //
 
 import UIKit
