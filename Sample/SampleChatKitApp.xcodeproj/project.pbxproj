@@ -16,9 +16,9 @@
 		18761205273F474C00DC56D7 /* SampleChatKitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18761204273F474C00DC56D7 /* SampleChatKitAppTests.swift */; };
 		1876120F273F474C00DC56D7 /* SampleChatKitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876120E273F474C00DC56D7 /* SampleChatKitAppUITests.swift */; };
 		18761211273F474C00DC56D7 /* SampleChatKitAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18761210273F474C00DC56D7 /* SampleChatKitAppUITestsLaunchTests.swift */; };
-		18761227273F478D00DC56D7 /* ChatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18761223273F477900DC56D7 /* ChatKit.framework */; };
-		18761228273F478D00DC56D7 /* ChatKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18761223273F477900DC56D7 /* ChatKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1876122B273F482200DC56D7 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876122A273F482200DC56D7 /* MainTableViewController.swift */; };
+		18761236273F48A700DC56D7 /* ChatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18761233273F489E00DC56D7 /* ChatKit.framework */; };
+		18761237273F48A700DC56D7 /* ChatKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18761233273F489E00DC56D7 /* ChatKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,16 +36,16 @@
 			remoteGlobalIDString = 187611E9273F474800DC56D7;
 			remoteInfo = SampleChatKitApp;
 		};
-		18761222273F477900DC56D7 /* PBXContainerItemProxy */ = {
+		18761232273F489E00DC56D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1876121D273F477900DC56D7 /* ChatKit.xcodeproj */;
+			containerPortal = 1876122D273F489E00DC56D7 /* ChatKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 187611B5273F3D5A00DC56D7;
 			remoteInfo = ChatKit;
 		};
-		18761224273F477900DC56D7 /* PBXContainerItemProxy */ = {
+		18761234273F489E00DC56D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1876121D273F477900DC56D7 /* ChatKit.xcodeproj */;
+			containerPortal = 1876122D273F489E00DC56D7 /* ChatKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 187611BF273F3D5A00DC56D7;
 			remoteInfo = ChatKitTests;
@@ -59,7 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				18761228273F478D00DC56D7 /* ChatKit.framework in Embed Frameworks */,
+				18761237273F48A700DC56D7 /* ChatKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,8 +80,8 @@
 		1876120A273F474C00DC56D7 /* SampleChatKitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleChatKitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1876120E273F474C00DC56D7 /* SampleChatKitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleChatKitAppUITests.swift; sourceTree = "<group>"; };
 		18761210273F474C00DC56D7 /* SampleChatKitAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleChatKitAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1876121D273F477900DC56D7 /* ChatKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ChatKit.xcodeproj; path = ../../../ChatKit.xcodeproj; sourceTree = "<group>"; };
 		1876122A273F482200DC56D7 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		1876122D273F489E00DC56D7 /* ChatKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ChatKit.xcodeproj; path = ../../ChatKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18761227273F478D00DC56D7 /* ChatKit.framework in Frameworks */,
+				18761236273F48A700DC56D7 /* ChatKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +134,7 @@
 		187611EC273F474800DC56D7 /* SampleChatKitApp */ = {
 			isa = PBXGroup;
 			children = (
-				1876121D273F477900DC56D7 /* ChatKit.xcodeproj */,
+				1876122D273F489E00DC56D7 /* ChatKit.xcodeproj */,
 				187611ED273F474800DC56D7 /* AppDelegate.swift */,
 				187611EF273F474800DC56D7 /* SceneDelegate.swift */,
 				187611F1273F474800DC56D7 /* ViewController.swift */,
@@ -164,20 +164,20 @@
 			path = SampleChatKitAppUITests;
 			sourceTree = "<group>";
 		};
-		1876121E273F477900DC56D7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18761223273F477900DC56D7 /* ChatKit.framework */,
-				18761225273F477900DC56D7 /* ChatKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		18761226273F478D00DC56D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1876122E273F489E00DC56D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18761233273F489E00DC56D7 /* ChatKit.framework */,
+				18761235273F489E00DC56D7 /* ChatKitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +273,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1876121E273F477900DC56D7 /* Products */;
-					ProjectRef = 1876121D273F477900DC56D7 /* ChatKit.xcodeproj */;
+					ProductGroup = 1876122E273F489E00DC56D7 /* Products */;
+					ProjectRef = 1876122D273F489E00DC56D7 /* ChatKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -287,18 +287,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		18761223273F477900DC56D7 /* ChatKit.framework */ = {
+		18761233273F489E00DC56D7 /* ChatKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ChatKit.framework;
-			remoteRef = 18761222273F477900DC56D7 /* PBXContainerItemProxy */;
+			remoteRef = 18761232273F489E00DC56D7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		18761225273F477900DC56D7 /* ChatKitTests.xctest */ = {
+		18761235273F489E00DC56D7 /* ChatKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChatKitTests.xctest;
-			remoteRef = 18761224273F477900DC56D7 /* PBXContainerItemProxy */;
+			remoteRef = 18761234273F489E00DC56D7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
