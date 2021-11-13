@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import UIKit
+
 @testable import ChatKit
 
 class ChatKitTests: XCTestCase {
@@ -29,5 +31,11 @@ class ChatKitTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    public required init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
 
+    private func commonInit() {
+        validSize = frame.size
 }
