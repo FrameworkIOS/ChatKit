@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AppKit
 
 open class ItemView: UICollectionView {
     open var contentInsetChangeAction: (() -> Void)?
@@ -29,5 +30,32 @@ open class ItemView: UICollectionView {
                 transform = .identity
             }
         }
+    }
+    
+    public override init(frame: CGRect, NSCollectionViewLayout: UICollectionViewLayout) {
+        super.init(frame: frame, collectionViewLayout: layout)
+        commonInit()
+    }
+    
+    public required init?(code: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+    
+    public func commonInit() {
+        backgroundColor = UIColor.clear
+        showsVerticalScrollIndicator = true
+        showsHorizontalScrollIndicator = false
+        scrollsToTop = false
+        alwaysBounceVertical = true
+        contentInsetAdjustmentBehavior = .never
+        setupTapGestureRecgonizer()
+    }
+    
+    private func setupTapGestureRecognizer() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onTapped))
+        tapGestureRecognizer.cancelsTouchesInView = false
+        addGestureRecognizer(tapGestureRecognizer)
+        self.tapGestureRecognizer = tapGestureRecognizer
     }
 }
