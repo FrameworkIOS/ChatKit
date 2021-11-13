@@ -20,6 +20,7 @@
 		18761236273F48A700DC56D7 /* ChatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18761233273F489E00DC56D7 /* ChatKit.framework */; };
 		18761237273F48A700DC56D7 /* ChatKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18761233273F489E00DC56D7 /* ChatKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18761239273F48E200DC56D7 /* SimpleChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18761238273F48E200DC56D7 /* SimpleChatViewController.swift */; };
+		1876123B273F496A00DC56D7 /* SimpleInputPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876123A273F496A00DC56D7 /* SimpleInputPanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		1876122A273F482200DC56D7 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		1876122D273F489E00DC56D7 /* ChatKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ChatKit.xcodeproj; path = ../../ChatKit.xcodeproj; sourceTree = "<group>"; };
 		18761238273F48E200DC56D7 /* SimpleChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleChatViewController.swift; sourceTree = "<group>"; };
+		1876123A273F496A00DC56D7 /* SimpleInputPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleInputPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				187611FB273F474B00DC56D7 /* Info.plist */,
 				1876122A273F482200DC56D7 /* MainTableViewController.swift */,
 				18761238273F48E200DC56D7 /* SimpleChatViewController.swift */,
+				1876123A273F496A00DC56D7 /* SimpleInputPanel.swift */,
 			);
 			path = SampleChatKitApp;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				1876122B273F482200DC56D7 /* MainTableViewController.swift in Sources */,
 				18761239273F48E200DC56D7 /* SimpleChatViewController.swift in Sources */,
 				187611F2273F474800DC56D7 /* ViewController.swift in Sources */,
+				1876123B273F496A00DC56D7 /* SimpleInputPanel.swift in Sources */,
 				187611EE273F474800DC56D7 /* AppDelegate.swift in Sources */,
 				187611F0273F474800DC56D7 /* SceneDelegate.swift in Sources */,
 			);
