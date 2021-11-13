@@ -58,4 +58,8 @@ open class ItemView: UICollectionView {
         addGestureRecognizer(tapGestureRecognizer)
         self.tapGestureRecognizer = tapGestureRecognizer
     }
+    
+    @objc private func onTapped() {
+        tapAction?()
+    }
 }
