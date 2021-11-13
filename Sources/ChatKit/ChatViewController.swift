@@ -45,4 +45,48 @@ open class ChatViewController: UIViewController {
         self.hidesBottomBarWhenPushed = true
     }
     
+    public required init?(coder: NSCoder) {
+        self.collectionView = ItemsView(frame: .zero, collectionViewLayout: collectionViewLayout)
+        self.inputPanel = InputPanel()
+        super.init(coder: coder)
+        self.hidesBottomBarWhenPushed = true
+    }
+    
+    deinit {
+        unregisterKeyboardNotifications()
+    }
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        setupBackgroundView()
+        setupScrollProxy()
+        setupContainerView()
+        setupCollectionView()
+        setupInputPanel()
+        registerKeyboardNotifications()
+    }
+    
+    open override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        containerView.frame = view.bounds
+        if isFirstLayout {
+            defer { isFirstLayout = false }
+            layoutInputPanel()
+            adjustCollectionViewInsets()
+        }
+    }
+    
+    open override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if isAutoInControllerTransition {
+            isInControllerTransition = false
+        }
+    }
+    
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if isAutoInControllerTransition {
+            isInControllerTransition = true
+        }
+    }
 }
