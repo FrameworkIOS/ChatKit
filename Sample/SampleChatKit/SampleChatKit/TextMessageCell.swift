@@ -41,7 +41,7 @@ class TextMessageCell: ItemCell {
     }
     
     private func commonInit() {
-        bubbleView.layer.cornerRadius = 18 
+        bubbleView.layer.cornerRadius = 18
         bubbleView.clipsToBounds = true
         itemView.addSubview(bubbleView)
         

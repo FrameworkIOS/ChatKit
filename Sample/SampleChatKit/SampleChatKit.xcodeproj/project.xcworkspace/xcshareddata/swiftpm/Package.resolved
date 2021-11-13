@@ -5,9 +5,9 @@
         "package": "HPGrowingTextView",
         "repositoryURL": "https://github.com/little2s/GrowingTextView.git",
         "state": {
-          "branch": null,
+          "branch": "master",
           "revision": "dabfbae61277ca05542c582b2240a58776726c6e",
-          "version": "2.0.0"
+          "version": null
         }
       }
     ]

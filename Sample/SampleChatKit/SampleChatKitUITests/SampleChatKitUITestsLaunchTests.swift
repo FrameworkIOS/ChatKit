@@ -1,13 +1,13 @@
 //
-//  SampleChatKitAppUITestsLaunchTests.swift
-//  SampleChatKitAppUITests
+//  SampleChatKitUITestsLaunchTests.swift
+//  SampleChatKitUITests
 //
 //  Created by Apple on 13/11/21.
 //
 
 import XCTest
 
-class SampleChatKitAppUITestsLaunchTests: XCTestCase {
+class SampleChatKitUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

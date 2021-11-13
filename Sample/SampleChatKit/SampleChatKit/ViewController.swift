@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SampleChatKitApp
+//  SampleChatKit
 //
 //  Created by Apple on 13/11/21.
 //

@@ -9,7 +9,7 @@ import UIKit
 import ChatKit
 
 struct TextMessageLayout: ItemLayout {
-
+    
     typealias Item = Message
         
     let cellReuseIdentifier: String = TextMessageCell.reuseIdentifier
