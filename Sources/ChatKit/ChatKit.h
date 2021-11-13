@@ -2,11 +2,11 @@
 //  ChatKit.h
 //  ChatKit
 //
-//  Created by Apple on 13/11/21.
+//  Created by Krisna Pranav on 13/11/21.
 //
 
-#ifndef ChatKit_h
-#define ChatKit_h
+#import <Foundation/Foundation.h>
 
+FOUNDATION_EXPORT double ChatKitVersionNumber;
 
-#endif /* ChatKit_h */
+FOUNDATION_EXPORT const unsigned char ChatKitVersionString[];
