@@ -8,6 +8,7 @@
 import UIKit
 
 open class ContainerView: UIView {
+    
     open var sizeHandler: ((CGSize) -> Void)?
     
     private var validSize: CGSize = .zero
@@ -27,7 +28,17 @@ open class ContainerView: UIView {
     }
     
     public override init(frame: CGRect) {
-        super.init(frame: .frame)
+        super.init(frame: frame)
         commonInit()
     }
+    
+    public required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+    
+    private func commonInit() {
+        validSize = frame.size
+    }
+    
 }
